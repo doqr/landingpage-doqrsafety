@@ -48,6 +48,6 @@ export default function availableChecklists() {
 
   const automaticContentInterval = setInterval(
     automaticallyChangeContent,
-    5000
+    2500
   );
 }
