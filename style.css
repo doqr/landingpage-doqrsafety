@@ -275,7 +275,7 @@ img {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
-  cursor: pointer;
+  cursor: default;
   font-weight: 600;
   white-space: nowrap;
   overflow-x: scroll;
@@ -286,6 +286,7 @@ img {
   margin-right: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .checklistListaTitle li:hover {
   color: var(--color-first);
@@ -295,6 +296,18 @@ img {
   border: 2px solid var(--color-first);
   padding: 0.5rem;
   border-radius: 2px;
+}
+
+.checklistListaTitle::-webkit-scrollbar {
+  background-color: rgb(221, 221, 221);
+  border-radius: 3px;
+  height: 0.65rem;
+  width: 0.65rem;
+}
+.checklistListaTitle::-webkit-scrollbar-thumb {
+  background-color: #8b8b8b;
+  border: 2px solid rgb(221, 221, 221);
+  border-radius: 4px;
 }
 
 .checklistsListaContent {
