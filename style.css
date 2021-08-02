@@ -267,21 +267,25 @@ img {
   background-color: var(--color-second);
   color: var(--color-white);
   padding: 60px 0;
+  min-height: 650px;
 }
 
 .checklistListaTitle {
   margin-top: 60px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 40px;
   cursor: pointer;
   font-weight: 600;
+  white-space: nowrap;
+  overflow-x: scroll;
+  position: relative;
 }
 
 .checklistListaTitle li {
-  margin-right: 20px;
+  margin-right: 30px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .checklistListaTitle li:hover {
   color: var(--color-first);
@@ -574,6 +578,7 @@ img {
 
 .tableDefault td p {
   margin-top: 5px;
+  text-transform: lowercase;
 }
 
 .tableDefault td:first-child {
@@ -590,6 +595,7 @@ img {
 .tableDefault td img {
   margin: 0 auto;
   width: 30px;
+  height: 22px;
 }
 
 /* FOOTER */
@@ -843,11 +849,16 @@ img {
   #checklists .checklistsListaContent {
     grid-template-columns: 1fr;
   }
-  #checklists .checklistListaTitle {
-    justify-content: center;
-  }
   #checklists .checklistsListaContent li {
     font-size: 1rem;
+  }
+  #checklists .checklistListaTitle::after {
+    content: "→";
+    position: absolute;
+    top: -10px;
+    right: 25px;
+    color: rgb(255, 255, 255);
+    animation: seta 0.5s ease-in 0s infinite alternate;
   }
 
   #comoFunciona .comoFuncionaWrapper img {
@@ -887,6 +898,13 @@ img {
   }
 }
 
+@media (max-width: 710px) {
+  #comoFunciona .comoFuncionaWrapper img:nth-child(1),
+  #comoFunciona .comoFuncionaWrapper img:nth-child(3) {
+    order: 2;
+  }
+}
+
 @media (max-width: 630px) {
   .escolhaSeuPlano {
     grid-template-columns: 1fr;
@@ -901,13 +919,6 @@ img {
   .escolhaSeuPlano div:nth-child(4),
   .escolhaSeuPlano div:nth-child(5) {
     margin-top: 0;
-  }
-}
-
-@media (max-width: 710px) {
-  #comoFunciona .comoFuncionaWrapper img:nth-child(1),
-  #comoFunciona .comoFuncionaWrapper img:nth-child(3) {
-    order: 2;
   }
 }
 
@@ -971,4 +982,13 @@ img {
 [data-anime].activeAnimation {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px);
+}
+
+@keyframes seta {
+  from {
+    right: 30px;
+  }
+  to {
+    right: 20px;
+  }
 }
