@@ -5,6 +5,7 @@ import ChangeBorderMenuWithScroll from "./module/changeBorderMenuWithScroll.js";
 import Accordion from "./module/accordion.js";
 import AvailableChecklists from "./module/availableChecklists.js";
 import ScrollAnimation from "./module/scrollAnimation.js";
+import Cookies from "./module/cookies.js";
 
 Modal();
 InternalScroll();
@@ -13,3 +14,4 @@ Menu();
 Accordion();
 AvailableChecklists();
 ScrollAnimation();
+Cookies();
