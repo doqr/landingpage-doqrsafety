@@ -696,6 +696,10 @@ img {
   margin: 0 auto 20px auto;
 }
 
+.footer .politicas {
+  color: #80f0bc;
+}
+
 /* MODAL */
 .modalContainer {
   display: none;
