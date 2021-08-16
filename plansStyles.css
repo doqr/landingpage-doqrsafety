@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+input,
+button {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  color: #17191c;
+}
+
+body {
+  height: 100vh;
+  background-color: #f1f3f6;
+  padding: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+label {
+  display: block;
+}
+
+.logo img {
+  max-width: 190px;
+  display: block;
+  margin: 2rem auto;
+}
+
+.sucessContainer {
+  max-width: 768px;
+  min-width: 500px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.sucessContainer h1 {
+  font-size: 35px;
+  text-align: center;
+  margin: 1rem 0 1.5rem;
+}
+
+.sucessContainer h1::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 3px;
+  background-color: #16e584;
+  margin: 8px auto 0 auto;
+}
+
+.sucessContainer p {
+  text-align: center;
+}
+
+.sub-title {
+  font-weight: 600;
+}
+
+.sucess {
+  color: #02bb64;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.sucessContainer a {
+  display: block;
+  max-width: 300px;
+  margin: 2rem auto 0 auto;
+  background-color: #16e584;
+  padding: 0.8rem 2.2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3px;
+}
+.sucessContainer a:hover {
+  filter: brightness(0.9);
+}
+
+.footer {
+  margin-top: 1rem;
+}
+
+.footer p {
+  margin: 1rem auto;
+  line-height: 1.4;
+}
+
+.footer hr {
+  border: 2px solid #e5e5e5;
+  margin-bottom: 1rem;
+}
+
+.footer span {
+  display: block;
+  text-align: center;
+  color: #b1b1b1;
+}
+
+@media (max-width: 768px) {
+  .sucessContainer {
+    width: 100%;
+    min-width: 100%;
+  }
+  .logo img {
+    max-width: 130px;
+  }
+}
