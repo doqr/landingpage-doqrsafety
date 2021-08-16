@@ -436,6 +436,9 @@ img {
   cursor: pointer;
   transition: 0.3s ease;
 }
+.faqLista dt:hover {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
 
 .faqLista dt img {
   width: 18.4px;
