@@ -6,6 +6,7 @@ import Accordion from "./module/accordion.js";
 import AvailableChecklists from "./module/availableChecklists.js";
 import ScrollAnimation from "./module/scrollAnimation.js";
 import Cookies from "./module/cookies.js";
+import Https from './module/https.js'
 
 Modal();
 InternalScroll();
@@ -15,3 +16,4 @@ Accordion();
 AvailableChecklists();
 ScrollAnimation();
 Cookies();
+Https();
