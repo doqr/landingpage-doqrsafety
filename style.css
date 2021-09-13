@@ -699,7 +699,8 @@ img {
   margin: 0 auto 20px auto;
 }
 
-.footer .politicas {
+.footer .politicas,
+.footer .termos {
   color: #80f0bc;
 }
 
@@ -1075,7 +1076,7 @@ img {
   left: 0;
   width: 100%;
   background-color: var(--color-white);
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   text-align: center;
   animation: 0.3s show-down ease forwards;
 
@@ -1087,7 +1088,7 @@ img {
 .cookies p {
   max-width: 1000px;
   margin-right: 1rem;
-  border-right: 1px solid rgba(0, 0, 0, .1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .cookies a {
@@ -1100,10 +1101,9 @@ img {
   color: white;
   border: none;
   border-radius: 2px;
-  padding: .3rem 1rem;
+  padding: 0.3rem 1rem;
   cursor: pointer;
   margin-right: 1rem;
   font-size: 1rem;
   font-weight: bold;
 }
-
