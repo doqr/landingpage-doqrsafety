@@ -65,6 +65,7 @@ img {
 }
 .mainButton:hover {
   transform: scale(1.1);
+  background-color: #04bd67;
 }
 
 .titleWhite {
@@ -239,6 +240,11 @@ img {
   color: var(--color-second);
   margin-bottom: 30px;
   line-height: 1.3;
+
+  opacity: 0;
+  transform: translate3d(0px, -40px, 0px);
+  animation: 0.5s show-anime-delay ease forwards;
+  animation-delay: 0.1s;
 }
 
 .homeContent h1 strong {
@@ -250,6 +256,18 @@ img {
   color: var(--color-black);
   line-height: 1.5;
   margin-bottom: 45px;
+
+  opacity: 0;
+  transform: translate3d(0px, -40px, 0px);
+  animation: 0.5s show-anime-delay ease forwards;
+  animation-delay: 0.4s;
+}
+
+.homeContent button {
+  opacity: 0;
+  transform: translate3d(0px, -40px, 0px);
+  animation: 0.5s show-anime-delay ease forwards;
+  animation-delay: 0.8s;
 }
 
 .homeContent p span {
@@ -259,6 +277,11 @@ img {
 #home img {
   width: 450px;
   justify-self: end;
+
+  opacity: 0;
+  transform: translate3d(40px, 0px, 0px);
+  animation: 0.5s show-anime-delay ease forwards;
+  animation-delay: 1s;
 }
 
 /* CHECKLISTS DISPONIVEIS */
@@ -1033,7 +1056,15 @@ img {
   }
 }
 
-/* POLITICAS DE PRIVACIDADE */
+/* Animation HOME */
+@keyframes show-anime-delay {
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+/* POLITICAS DE PRIVACIDADE e TERMOS */
 .politicasPrivacidade {
   color: #17191c;
   padding: 3rem;
@@ -1067,6 +1098,25 @@ img {
 .politicasPrivacidade span {
   margin-top: 3rem;
   display: block;
+}
+
+.headerTermos {
+  width: 100%;
+  background-color: var(--color-darkblue);
+  text-align: center;
+  padding: 1rem;
+}
+.headerTermos img {
+  margin: 0 auto;
+  padding: 0.5rem;
+  max-width: 150px;
+}
+.linkPdf {
+  display: block;
+  margin-top: 1rem;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #000;
 }
 
 /* COOKIES */
